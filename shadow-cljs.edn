@@ -7,7 +7,11 @@
  :dependencies
  [[reagent/reagent             "0.10.0"]
   [com.cognitect/transit-cljs  "0.8.269"]
-  [com.andrewmcveigh/cljs-time "0.5.2"]]
+  [com.andrewmcveigh/cljs-time "0.5.2"]
+  ^:dev [nrepl/nrepl               "0.8.3"]
+  ^:dev [cider/cider-nrepl         "0.28.3"]]
+
+ :nrepl {:port 9000 :middleware []}
 
  :builds
  {:frontend
