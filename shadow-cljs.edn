@@ -1,0 +1,17 @@
+;; shadow-cljs configuration
+{:source-paths
+ ["src/dev"
+  "src/main"
+  "src/test"]
+ :dev-http {8080 "public"}
+ :dependencies
+ [[reagent/reagent             "0.10.0"]
+  [com.cognitect/transit-cljs  "0.8.269"]
+  [com.andrewmcveigh/cljs-time "0.5.2"]]
+
+ :builds
+ {:frontend
+  {:target :browser
+   :modules {:main {:init-fn app.main/init}}}}}
+
+
